@@ -40,6 +40,7 @@ import { ShelfManagementComponent } from './modules/shelf/shelf-management/shelf
     MatIconModule,
     MatDialogModule,
   ],
+  
   providers: [
     provideHttpClient(withInterceptors([urlInterceptor])),
     {
