@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <h2>Products</h2>
+    <div class="d-flex flex-wrap">
+        <ng-container *ngFor="let product of products">
+            <app-product-card class="m-2" 
+                [product]="product" 
+                (edit)="editProduct($event)" 
+                (delete)="deleteProduct($event)" 
+            >
+            </app-product-card> 
+        </ng-container>
+    </div>
+    <button class="btn btn-primary mt-2" (click)="createProduct()">Create Product</button> 
+</div>

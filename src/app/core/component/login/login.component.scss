@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://3pllinks.com/wp-content/uploads/2022/09/empty-warehouse-storage-distribution-centers_41470-4881.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    form {
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                color: #666;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+
+        .btn1 {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #2bb3e9;
+            }
+        }
+
+        .btn2 {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #43a70a;
+            }
+        }
+
+        .btn2-primary {
+            background-color: #2f7506;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .btn1-primary {
+            background-color: #3498db;
+            color: #fff;
+        }
+    }
+}
